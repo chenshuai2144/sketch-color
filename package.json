@@ -1,6 +1,6 @@
 {
   "name": "@chenshuai2144/sketch-color",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "scripts": {
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi dev",
     "docs:build": "dumi build",
@@ -13,8 +13,10 @@
     "prepublishOnly": "npm run build"
   },
   "files": [
-    "es"
+    "es",
+    "lib"
   ],
+  "main": "lib/index.js",
   "module": "es/index.js",
   "typings": "es/index.d.ts",
   "gitHooks": {
