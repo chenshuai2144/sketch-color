@@ -1,6 +1,5 @@
 {
-  "private": true,
-  "name": "sketch-color",
+  "name": "@chenshuai2144/sketch-color",
   "version": "1.0.0",
   "scripts": {
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi dev",
