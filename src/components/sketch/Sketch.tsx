@@ -31,7 +31,7 @@ export interface ColorResult {
 }
 
 export type ColorChangeHandler = (
-  color: Partial<ColorResult>,
+  color: ColorResult,
   event: React.ChangeEvent<HTMLInputElement>,
 ) => void;
 
@@ -53,7 +53,7 @@ export interface ColorPickerProps {
   color?: Color | undefined;
   className?: string | undefined;
   styles?: Partial<Classes<any>> | undefined;
-  onChange?: ColorChangeHandler | undefined;
+  onChange?: ColorChangeHandler;
   onChangeComplete?: ColorChangeHandler | undefined;
 }
 
@@ -232,4 +232,6 @@ Sketch.defaultProps = {
   ],
 };
 
-export default ColorWrap(Sketch);
+const SketchPicker = ColorWrap(Sketch) as React.FC<SketchPickerProps>;
+
+export { SketchPicker };

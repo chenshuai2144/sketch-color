@@ -37,7 +37,7 @@ export const SketchPresetColors: React.FC<{
       {
         hex,
         source: 'hex',
-      },
+      } as any,
       e,
     );
   };

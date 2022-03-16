@@ -1,3 +1,4 @@
-import Sketch from './components/sketch/Sketch';
+import { SketchPicker, SketchPickerProps } from './components/sketch/Sketch';
 
-export { Sketch };
+export type { SketchPickerProps };
+export { SketchPicker };
