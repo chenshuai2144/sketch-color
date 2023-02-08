@@ -1,6 +1,6 @@
 {
   "name": "@chenshuai2144/sketch-color",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi dev",
